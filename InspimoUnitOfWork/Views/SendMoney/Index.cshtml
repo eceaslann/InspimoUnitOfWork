@@ -1,0 +1,23 @@
+﻿@model UnitOfWorkDesignPattern.Models.CustomerViewModel
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <form method="post">
+        <br /><br>
+        <label>Gönderici ID</label>
+        <input type="text" class="form-control" asp-for="SenderID" />
+        <br />
+        <label>Alıcı ID</label>
+        <input type="text" class="form-control" asp-for="ReceiverID" />
+        <br />
+        <label>Miktar</label>
+        <input type="text" class="form-control" asp-for="Amount" />
+        <br />
+        <button class="btn btn-dark">Parayı Gönder</button>
+    </form>
+</div>
